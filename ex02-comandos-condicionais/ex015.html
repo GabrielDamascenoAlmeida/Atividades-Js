@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma das idades</title>
+</head>
+<body>
+    <h1>Soma das idades</h1>
+    <script>
+        let idades = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let soma = 0
+
+        for (i = 0; i<idades.length; i++) {
+            idades[i] = parseInt(prompt("Didite a idade da pessoa: " +i))
+            document.write("Pessoa "+ (i + 1) +" idade: " +idades[i]+"<br>")
+        }  
+        soma = idades.reduce(function(acumulador, valorAtual){
+            return acumulador + valorAtual
+        })
+
+        document.write("A soma das idades é "+ soma)
+
+    </script>
+</body>
+</html>
+
+<!-- // idades[0] = parseInt(prompt("Digite a idade da pessoa 1: "))
+        // idades[1] = parseInt(prompt("Digite a idade da pessoa 2: "))
+        // idades[2] = parseInt(prompt("Digite a idade da pessoa 3: "))
+        // idades[3] = parseInt(prompt("Digite a idade da pessoa 4: "))
+        // idades[4] = parseInt(prompt("Digite a idade da pessoa 5: "))
+        // idades[5] = parseInt(prompt("Digite a idade da pessoa 6: "))
+        // idades[6] = parseInt(prompt("Digite a idade da pessoa 7: "))
+        // idades[7] = parseInt(prompt("Digite a idade da pessoa 8: "))
+        // idades[8] = parseInt(prompt("Digite a idade da pessoa 9: "))
+        // idades[9] = parseInt(prompt("Digite a idade da pessoa 10: "))
+        // idades[10] = parseInt(prompt("Digite a idade da pessoa 11: "))
+        // idades[11] = parseInt(prompt("Digite a idade da pessoa 12: "))
+        // idades[12] = parseInt(prompt("Digite a idade da pessoa 13: "))
+        // idades[13] = parseInt(prompt("Digite a idade da pessoa 14: "))
+        // idades[14] = parseInt(prompt("Digite a idade da pessoa 15: "))
+        // idades[15] = parseInt(prompt("Digite a idade da pessoa 16: "))
+        // idades[16] = parseInt(prompt("Digite a idade da pessoa 17: "))
+        // idades[17] = parseInt(prompt("Digite a idade da pessoa 18: "))
+        // idades[18] = parseInt(prompt("Digite a idade da pessoa 19: "))
+        // idades[19] = parseInt(prompt("Digite a idade da pessoa 20: ")) -->

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codigo produto</title>
+</head>
+<body>
+    <h1>Codigo produto</h1>
+
+    <script>
+        let codigo = prompt("selecione o código do produto (1, 2 ou 3): ")
+        let quantidade = parseInt(prompt("Quantidade comprada"))
+        let valor = 0
+        let total = 0
+        let produtos = ['ventilador', 'lápis', 'garrafa']
+
+        if (codigo == 1) {
+            produtos[0]
+            valor = 100
+            total = valor * quantidade
+            document.write("O valor total da sua compra foi de R$" + total)
+        } else if (codigo == 2) {
+            produtos[1]
+            valor = 2
+            total = valor * quantidade
+            document.write("O valor total da sua compra foi de R$" + total)
+        } else if (codigo == 3) {
+            produtos[2]
+            valor = 5
+            total = valor * quantidade
+            document.write("O valor total da sua compra foi de R$" + total)
+        } else {
+            document.write("O valor do código é inválido")
+        }
+
+    </script>
+</body>
+</html>

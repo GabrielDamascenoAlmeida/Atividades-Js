@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordem crescente</title>
+</head>
+<body>
+    <h1>Ordem crescente</h1>
+
+    <script>
+        let num1 = parseInt(prompt("Insira o primeiro número: "))
+        let num2 = parseInt(prompt("Insira o segundo número: "))
+        let num3 = parseInt(prompt("Insira o terceiro número: "))
+
+        let container  = [num1, num2, num3]
+        container.sort((a, b) => a - b)
+        document.write("as ordem numérica é: " + container[0] + " " + container[1] + " " + container[2])
+    </script>
+</body>
+</html>

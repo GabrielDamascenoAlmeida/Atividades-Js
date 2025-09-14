@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aluno</title>
+</head>
+<body>
+    <h1>Aluno e sua situação</h1>
+
+    <script>
+        let nota = parseFloat(prompt("Escreva a nota: "))
+        let nome = prompt("Digite o nome do aluno")
+        let materia = prompt("digite o nome da materia")
+
+        if (nota >= 7) {
+            document.write("A nota do aluno foi: "+nota+" aluno aprovado na matéria de: " + materia)
+        } else {
+            document.write("A nota do aluno foi: "+nota+" aluno reprovado na matéria de: " + materia)
+        }
+
+    </script>
+</body>
+</html>

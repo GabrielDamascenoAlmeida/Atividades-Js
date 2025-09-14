@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aposentadoria</title>
+</head>
+<body>
+    <h1>Aposentadoria</h1>
+
+    <script>
+        let sexo = prompt("Digite M para masculino ou F para feminino: ")
+        let idade = parseInt(prompt("Digite a sua idade: "))
+
+        if (sexo == "M" && idade >= 65) {
+            document.write("Você homem pode se aposentar")
+        } else if (sexo == "F" && idade >= 60) {
+            document.write("Você mulher pode se aposentar")
+        } else {
+            document.write("Você não pode se aposentar")
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média dos alunos</title>
+</head>
+<body>
+    <h1>Média dos alunos</h1>
+
+    <script>
+        let nota1 = parseFloat(prompt("Coloque a primeira nota do aluno: "))
+        let nota2 = parseFloat(prompt("Coloque a segunda nota do aluno: "))
+        let nota3 = parseFloat(prompt("Coloque a terceira nota do aluno: "))
+        let media = ((nota1 * 2)  + (nota2 * 3) + (nota3 * 5) ) / (2 + 3 + 5)
+
+        if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10) {
+            alert("Notas inválidas, coloque notas entre 0 e 10")
+        } else {
+            document.write("A média do aluno é de " + media + "<br>")
+            if (media >= 6) {
+                document.write("O aluno foi aprovado")
+            } else {
+                document.write("O aluno foi reprovado")
+            }            
+        }
+
+    </script>
+</body>
+</html>

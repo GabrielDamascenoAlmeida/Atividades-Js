@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da pessoa mais nova</title>
+</head>
+<body>
+    <h1>Nome da pessoa mais nova</h1>
+
+    <script>
+        let nomePessoa = ["", "", ""]
+        let idadePessoa = [0, 0, 0]
+        
+
+        for (i = 0; i < idadePessoa.length; i++) {
+            nomePessoa[i] = prompt("Digite seu nome: ")
+            idadePessoa[i] = parseInt(prompt("Digite sua idade: "))
+
+            document.write("Nome: "+nomePessoa[i]+" Idade: "+idadePessoa[i]+"<br>")
+           
+        }
+         let menorIdade = Math.min(...idadePessoa) // consegui exibir a menor idade tranquilamente o problema foi achar um jeito de relacionar a menor idade com o índice do array]
+         let indiceMenor = idadePessoa.indexOf(menorIdade) //pega o indice da menor idade
+         let nomeMaisNovo = nomePessoa[indiceMenor]
+         document.write("Menor idade é: " + menorIdade+ "<br>")
+         document.write("O nome da pessoa mais nova é: "+nomeMaisNovo)
+    </script>
+</body>
+</html>

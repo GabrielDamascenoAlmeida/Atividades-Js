@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números do usuário</title>
+</head>
+<body>
+    <h1>Números do usuário</h1>
+
+    <script>
+        let numeros = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let soma = 0
+        numeros[0] = parseInt(prompt("Digite um número: "))
+        numeros[1] = parseInt(prompt("Digite um número: "))
+        numeros[2] = parseInt(prompt("Digite um número: "))
+        numeros[3] = parseInt(prompt("Digite um número: "))
+        numeros[4] = parseInt(prompt("Digite um número: "))
+        numeros[5] = parseInt(prompt("Digite um número: "))
+        numeros[6] = parseInt(prompt("Digite um número: "))
+        numeros[7] = parseInt(prompt("Digite um número: "))
+        numeros[8] = parseInt(prompt("Digite um número: "))
+        numeros[9] = parseInt(prompt("Digite um número: "))
+        
+        soma = numeros.reduce(function(acumulador, valorAtual){
+            return acumulador + valorAtual
+        })
+
+        document.write("A soma dos seu números é " +soma)
+    </script>
+</body>
+</html>

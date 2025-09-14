@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maçãs</title>
+</head>
+<body>
+    <h1>Maçãs</h1>
+
+    <script>
+        let quantia = parseInt(prompt("Selecione a quantidade de maçãs compradas: ")) 
+        let valor = 0
+        let total = 0
+
+        if (quantia >= 12) {
+            valor = 0.40
+            total = quantia * valor
+            document.write("O total a ser pago é de : " + total)
+        } else {
+            valor = 0.50
+            total = quantia * valor
+            document.write("O total a ser pago é de : " + total)
+        }
+    </script>
+</body>
+</html>

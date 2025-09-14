@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5Produto e desconto</title>
+</head>
+<body>
+    <h1>Atividade 05 Produto e desconto</h1>
+
+    <script>
+        let produto = prompt("Digite o produto aqui")
+        let quantidade = parseInt(prompt("Digite a quantidade de produtos comprados"))
+        let preco = parseFloat(prompt("Digite o valor do produto"))
+        let total = quantidade * preco
+
+        if (quantidade <= 10) {
+            document.write("O total de sua compra foi de R$" + total +" .")
+        } else {
+            let desconto = total * 0.1 
+            document.write("O total de sua compra foi de " + total + " porém, você ganhou um desconto de 10% sobre esse valor então o total é de " + (total - desconto))
+        }
+        
+    </script>
+</body>
+</html>

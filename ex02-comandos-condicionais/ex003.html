@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saldo médio</title>
+</head>
+<body>
+    <h1>Saldo médio</h1>
+
+    <script>
+        let saldoMedio = parseInt(prompt("Digite o seu saldo médio: "))
+        let porcentagem = 0
+        let total = 0
+
+        if (saldoMedio < 0) {
+            alert("Valor inválido")
+            document.write("Valor inválido")
+        } else {
+            if (saldoMedio >= 0 && saldoMedio <= 500) {
+                document.write("Nenhum crédito adicional")
+            } else if (saldoMedio >= 501 && saldoMedio <= 1000) {
+                porcentagem = saldoMedio * 0.30
+                total = saldoMedio + porcentagem
+                document.write("30% do valor so saldo médio de "+saldoMedio+" é "+porcentagem+" o valor total agora é de "+total)
+            } else if (saldoMedio >= 1001 && saldoMedio <= 3000) {
+                porcentagem = saldoMedio * 0.40
+                total = saldoMedio + porcentagem
+                document.write("40% do valor so saldo médio de "+saldoMedio+" é "+porcentagem+" o valor total agora é de "+total)
+            } else {
+                porcentagem = saldoMedio * 0.50
+                total = saldoMedio + porcentagem
+                document.write("50% do valor so saldo médio de "+saldoMedio+" é "+porcentagem+" o valor total agora é de "+total)
+            }
+        }
+    </script>
+</body>
+</html>

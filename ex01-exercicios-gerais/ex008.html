@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8 </title>
+</head>
+<body>
+    <h1>Trocar os valores</h1>
+    <button onclick="trocarValores()">Clique para trocar os valores</button>
+
+    <script>
+        let numero1 = parseInt(prompt("Insira o primeiro número: "))
+        let numero2 = parseInt(prompt("Insira o segundo número: "))
+
+        document.write("O valor do primeiro número é " + numero1 + " e o valor do segundo número é " + numero2 + "<br>")
+        
+        function trocarValores() {
+            let armazenar = numero1
+            numero1 = numero2
+            numero2 = armazenar
+            alert(`O novo valor do primeiro número é ${numero1} e o novo valor do segundo número é ${numero2}`)
+        }
+    </script>
+</body>
+</html>

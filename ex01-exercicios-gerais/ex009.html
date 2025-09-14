@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montante</title>
+</head>
+<body>
+    <h1>Montante</h1>
+    <script>
+        let deposito = parseFloat(prompt("Insira seu depósito: "))
+        let taxaDeJuros = parseFloat(prompt("Insira a taxa de juros: ")).toFixed(2)
+        let juros = deposito * (taxaDeJuros / 100) * 12
+        let montante  = deposito + juros
+
+        document.write("O montante depois de 12 meses é: " +montante)
+    </script>
+</body>
+</html>

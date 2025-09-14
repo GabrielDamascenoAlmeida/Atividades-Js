@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 Par ou ímpar</title>
+</head>
+<body>
+    <h1>Comissao</h1>
+    <script>
+        let salario = parseFloat(prompt())
+        let comissao = (salario * 0.05) + salario
+        if (salario <= 0 ) {
+            document.write("Insira um salário válido")
+        } else {
+            document.write("Seu salário é de R$" + salario + " com sua comissão de 5% o valor sobe para R$" + comissao)
+        }
+    </script>
+</body>
+</html>

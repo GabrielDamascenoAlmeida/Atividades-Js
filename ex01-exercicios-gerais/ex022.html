@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+</head>
+<body>
+    <h1>Salarioo</h1>
+    <script>
+        let salario = parseFloat(prompt("Digite seu salário: "))
+        let bonus = 0
+        if (salario > 2000) {
+            bonus = (salario * 0.1) + salario
+            document.write("O seu salário agora é de R$" + bonus.toFixed(2) + " devido ao aumento de 10%")
+        } else {
+            bonus = (salario * 0.05) + salario
+            document.write("O seu salário agora é de R$" + bonus.toFixed(2) + " devido ao aumento de 5%")
+        }
+    </script>
+</body>
+</html>

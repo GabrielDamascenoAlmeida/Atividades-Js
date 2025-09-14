@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantidade total de calorias</title>
+</head>
+<body>
+    <h1>Quantidade total de calorias</h1>
+
+    <script>
+        let prato = parseInt(prompt("Escolha o prato: Digite 1 para vegetariano, 2 para peixe, 3 para frango ou 4 para carne: "))
+        let sobremesa = parseInt(prompt("Escolha a sobremesa: Digite 1 para abacaxi, 2 para sorvete diet 3 para mousse diet ou 4 para mousse chocolate: "))
+        let bebida = parseInt(prompt("Escolha a bebida: Digite 1 para chá, 2 para suco de laranja, 3 para suco de melão ou 4 para refrigerante diet: "))
+
+        let caloriasPrato = 0
+        let caloriasSobremesa = 0
+        let caloriasBebida = 0
+
+        if (prato == 1) {
+            caloriasPrato = 180
+        } else if (prato == 2) {
+            caloriasPrato = 230
+        } else if (prato == 3) {
+            caloriasPrato = 250
+        } else if (prato == 4) {
+            caloriasPrato = 350
+        } else {
+            document.write("Insira um valor válido de 1 A 4 no prato <br>")
+        }
+
+        if (sobremesa == 1) {
+            caloriasSobremesa = 75
+        } else if (sobremesa == 2) {
+            caloriasSobremesa = 110
+        } else if (sobremesa == 3) {
+            caloriasSobremesa = 170
+        } else if (sobremesa == 4) {
+            caloriasSobremesa = 200
+        } else {
+            document.write("Insira um valor válido de 1 A 4 na sobremesa <br>")
+        }
+
+        if (bebida == 1) {
+            caloriasBebida = 20
+        } else if (bebida == 2) {
+            caloriasBebida = 70
+        } else if (bebida == 3) {
+            caloriasBebida = 100
+        } else if (bebida == 4) {
+            caloriasBebida = 65
+        } else {
+            document.write("Insira um valor válido de 1 A 4 na bebida <br>")
+        }
+
+
+        let somaCalorias = caloriasPrato + caloriasSobremesa + caloriasBebida 
+        document.write("O total de calorias da sua refeição é de: " + somaCalorias)
+
+    </script>
+</body>
+</html>

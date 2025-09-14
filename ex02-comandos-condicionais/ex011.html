@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedores</title>
+</head>
+<body>
+    <h1>Vendedores</h1>
+
+    <script>
+        let nomeVendedor = prompt("Digite o nome do vendedor")
+        let salario = parseFloat(prompt("Digite o salário fixo:"))
+        let totalVendas =  parseFloat(prompt("Digite o total de vendas em dinheiro"))
+        let comissao = (totalVendas * 0.15) + totalVendas
+
+        document.write("Vendedor: "+nomeVendedor+"<br>")
+        document.write("Salario: R$"+salario+"<br>")
+        document.write("Salario fim do mês: R$"+(comissao+salario))
+    </script>
+</body>
+</html>
