@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+<body>
+    <h1>Número fatorial</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número: "))
+        cont = num
+        fatorial = 0
+        while (cont > 1) {
+            fatorial = num * (cont - 1) 
+            num = fatorial
+            cont--
+        }
+        document.write(fatorial)
+    </script>
+</body>
+</html>
