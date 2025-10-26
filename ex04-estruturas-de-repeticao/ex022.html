@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 22</title>
+</head>
+<body>
+    <h1>Números primos com do while</h1>
+
+    <script>
+        num = parseInt(prompt("Digite um número para saber seus divisores "))
+        cont = 0
+        div = 0
+        do {
+            cont ++
+            if (num % cont == 0) {
+                div ++
+            }
+        }   while (cont < num)
+        if (div > 2) {
+            document.write("Número não é primo")
+        } else {
+            document.write("Número é primo")
+        }
+        
+    </script>
+</body>
+</html>

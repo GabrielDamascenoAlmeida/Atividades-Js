@@ -10,6 +10,7 @@
 
     <script>
         let num = parseInt(prompt("Digite um número: "))
+        let reserva = num
         cont = num
         fatorial = 0
         while (cont > 1) {
@@ -17,7 +18,7 @@
             num = fatorial
             cont--
         }
-        document.write(fatorial)
+        document.write("O fatorial do número "+reserva+" é "+fatorial)
     </script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 19</title>
+</head>
+<body>
+    <h1>Média aritmética de 5 números inteiros com do while</h1>
+
+    <script>
+        
+        let contador = 0
+        soma = 0
+        do {
+            contador ++
+            num = parseInt(prompt("Digite um número inteiro"))
+            soma += num
+        } while (contador < 5)
+        document.write("A média dos números escritos é: " + (soma / contador))
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 29</title>
+</head>
+<body>
+    <h1>Número fatorial  com do while</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número: "))
+        let reserva = num
+        cont = num
+        fatorial = 0
+        do {
+            fatorial = num * (cont - 1) 
+            num = fatorial
+            cont--
+        } while (cont > 1)
+        document.write("O fatorial do número "+reserva+" é "+fatorial)
+    </script>
+</body>
+</html>

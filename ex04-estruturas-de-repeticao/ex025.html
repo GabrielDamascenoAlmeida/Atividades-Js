@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25</title>
+</head>
+<body>
+    <h1>Os primerios 20 números da sequencia de fibonacci com do while</h1>
+
+    <script>
+        let cont = 0 
+        let termo1 = 0
+        let termo2 = 1
+        do {
+            cont ++
+            let termo3 = termo1 + termo2
+            document.write(termo1 + "<br>")  
+            termo1 = termo2
+            termo2 = termo3
+            
+        } while (cont < 20)
+
+    </script>
+</body>
+</html>

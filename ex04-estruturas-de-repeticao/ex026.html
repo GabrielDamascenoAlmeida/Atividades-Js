@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 26</title>
+</head>
+<body>
+    <h1>Soma dos números pares de 1 até o numero digitado com do while</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número: "))
+        let cont = 1
+        let soma = 0
+        do {
+            cont++ 
+                if (cont % 2 == 0) {
+                    soma += cont
+                }
+        }   while (cont < num)
+
+        document.write(soma)
+    </script>
+
+    <!-- <h1>Soma dos números pares entre 1 e o numero digitado</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número: "))
+        let cont = 1
+        let soma = 0
+        do {
+            cont++ 
+                if (cont % 2 == 0) {
+                    soma += cont
+                }
+        } while (cont < (num - 1))
+        document.write(soma)
+    </script> -->
+</body>
+</html>
