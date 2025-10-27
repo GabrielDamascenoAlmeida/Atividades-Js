@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 43</title>
+</head>
+<body>
+    <h1>Separando digitos de um número inteiro com for</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite um número: "))
+        let modulo = 0
+        if (num > 0) {
+            for (num;num > 0;num = Math.trunc(num / 10)) {
+                modulo = num % 10 
+                document.write(modulo + ' ')
+            }
+        } else {
+            document.write("Número inválido")
+        }
+
+    </script>
+</body>
+</html>

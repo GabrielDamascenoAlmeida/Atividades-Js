@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 38</title>
+</head>
+<body>
+    <h1>Sequencia de fibonacci com for</h1>
+
+    <script>
+        let num = parseInt(prompt("Digite o número que a sequencia de fibonacci vai ter: "))
+        
+        let termo1 = 0
+        let termo2 = 1
+        for (let cont = 0;cont < num;cont ++) {
+            let termo3 = termo1 + termo2
+            document.write(termo1 + "<br>")  
+            termo1 = termo2
+            termo2 = termo3
+        }
+        
+    </script>
+</body>
+</html>
